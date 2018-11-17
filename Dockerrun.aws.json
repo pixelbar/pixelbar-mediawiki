@@ -8,5 +8,19 @@
     {
       "ContainerPort": "80"
     }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/home/ec2-user/LocalSettings.php",
+      "ContainerDirectory": "/var/www/html/LocalSettings.php"
+    },
+    {
+      "HostDirectory": "/home/ec2-user/images/",
+      "ContainerDirectory": "/var/www/html/images/"
+    },
+    {
+      "HostDirectory": "/home/ec2-user/extensions/",
+      "ContainerDirectory": "/var/www/html/extensions/"
+    }
   ]
 }
