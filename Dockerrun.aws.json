@@ -11,15 +11,19 @@
   ],
   "Volumes": [
     {
-      "HostDirectory": "/home/ec2-user/LocalSettings.php",
+      "HostDirectory": "/var/app/current/LocalSettings.php",
       "ContainerDirectory": "/var/www/html/LocalSettings.php"
     },
     {
-      "HostDirectory": "/home/ec2-user/images/",
+      "HostDirectory": "/var/app/current/.htaccess",
+      "ContainerDirectory": "/var/www/html/.htaccess"
+    },
+    {
+      "HostDirectory": "/var/app/current/images/",
       "ContainerDirectory": "/var/www/html/images/"
     },
     {
-      "HostDirectory": "/home/ec2-user/extensions/",
+      "HostDirectory": "/var/app/current/extensions/",
       "ContainerDirectory": "/var/www/html/extensions/"
     }
   ]
